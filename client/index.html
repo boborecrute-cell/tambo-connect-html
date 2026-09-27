@@ -1,26 +1,190 @@
 <!doctype html>
-<html lang="en">
-
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>Tambo Connect — HTML/CSS/JS</title>    
-    <!-- THIS IS THE START OF A COMMENT BLOCK, BLOCK TO BE DELETED: Google Fonts here, example:
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tambo Connect — vos produits européens livrés en Afrique sans stress." />
+    <meta name="theme-color" content="#07182f" />
+    <title>Tambo Connect — Importation premium Europe → Afrique</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    THIS IS THE END OF A COMMENT BLOCK, BLOCK TO BE DELETED -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/styles.css" />
   </head>
-
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <script
-      defer
-      src="%VITE_ANALYTICS_ENDPOINT%/umami"
-      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
-  </body>
+    <div class="site-shell">
+      <header class="site-header" data-header>
+        <div class="container nav-wrap">
+          <a class="brand" href="#top" aria-label="Tambo Connect — retour en haut">
+            <span class="brand-mark" aria-hidden="true"><span>TC</span><i></i></span>
+            <span class="brand-copy"><strong>Tambo</strong><span>Connect</span></span>
+          </a>
+          <nav class="desktop-nav" data-nav aria-label="Navigation principale">
+            <a href="#process">Comment ça marche</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#services">Services</a>
+            <a href="#tarifs">Tarifs</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+          <a class="header-cta" href="#quote">Demander un devis <span class="icon" data-icon="arrow-up-right"></span></a>
+          <button class="menu-trigger" type="button" data-menu-toggle aria-label="Ouvrir le menu" aria-expanded="false">
+            <span class="icon" data-icon="menu"></span>
+          </button>
+        </div>
+      </header>
 
+      <main id="top">
+        <section class="hero-section">
+          <div class="hero-glow glow-one"></div>
+          <div class="hero-glow glow-two"></div>
+          <div class="container hero-grid">
+            <div class="hero-content reveal-up">
+              <div class="eyebrow"><span class="status-dot"></span> HUB BELGIQUE <span class="icon" data-icon="arrow-right"></span> AFRIQUE</div>
+              <h1>Vos produits<br /><em>européens</em><br />livrés en Afrique.</h1>
+              <p class="hero-lede">Un lien produit, une destination. Tambo Connect gère l’achat, la logistique et les douanes pour vous livrer en Afrique du Sud et en RDC.</p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="#quote">Envoyer un lien produit <span class="icon" data-icon="arrow-down-right"></span></a>
+                <a class="button button-ghost" href="#process">Voir le processus <span class="icon" data-icon="arrow-right"></span></a>
+              </div>
+              <div class="trust-row">
+                <span><span class="icon" data-icon="shield-check"></span> Paiement sécurisé</span>
+                <span><span class="icon" data-icon="clock"></span> Devis sous 48h</span>
+                <span><span class="icon" data-icon="badge-check"></span> Service premium</span>
+              </div>
+            </div>
+
+            <div class="hero-visual reveal-up delay-one" aria-label="Visualisation d’un colis en transit de Belgique vers l’Afrique">
+              <div class="hero-art">
+                <div class="art-sun"></div>
+                <div class="art-cloud cloud-one"></div>
+                <div class="art-cloud cloud-two"></div>
+                <div class="art-horizon"></div>
+                <div class="art-route route-a"></div>
+                <div class="art-route route-b"></div>
+                <div class="art-pin pin-belgium"><span>BE</span></div>
+                <div class="art-pin pin-africa"><span>ZA</span></div>
+                <div class="art-package package-one"><span class="package-tape"></span><i>TC</i></div>
+                <div class="art-package package-two"><span class="package-tape"></span><i>24</i></div>
+                <div class="art-tag"><span>EUROPEAN GOODS</span><strong>READY TO SHIP</strong></div>
+                <div class="art-caption">BELGIUM HUB / TRANSIT DECK 04</div>
+              </div>
+              <div class="route-card">
+                <div class="route-card-top"><span class="live-pill"><span class="status-dot"></span> EN TRANSIT</span><span class="route-time">09:42 CET</span></div>
+                <div class="route-line"><div class="route-node"><span>🇧🇪</span><small>Aalst</small></div><div class="route-track"><span></span><span></span><span></span></div><div class="route-node destination"><span>🇿🇦</span><small>Johannesburg</small></div></div>
+                <div class="route-card-bottom"><strong>Suivi à chaque étape</strong><span>WhatsApp inclus</span></div>
+              </div>
+              <div class="floating-stamp"><span class="icon" data-icon="zap"></span><strong>48h</strong><span>devis garanti</span></div>
+            </div>
+          </div>
+          <div class="container hero-bottomline"><span>Importation premium</span><span>Europe → South Africa → Congo RDC</span><a class="hero-scroll" href="#process">Découvrir <span class="icon" data-icon="arrow-down-right"></span></a></div>
+        </section>
+
+        <section class="stats-section" aria-label="Chiffres clés">
+          <div class="container stats-grid">
+            <div><strong>48h</strong><span>Devis garanti</span></div>
+            <div><strong>02</strong><span>Pays desservis</span></div>
+            <div><strong>100%</strong><span>Douanes gérées</span></div>
+            <div><strong>1:1</strong><span>Suivi humain</span></div>
+          </div>
+        </section>
+
+        <section id="process" class="section process-section">
+          <div class="container">
+            <div class="route-caption"><span>TC / MANIFEST 001</span><strong>BRU → JNB / KIN</strong><span>LIVE PROCESS</span></div>
+            <div class="section-intro split-intro"><div><span class="section-kicker">Le parcours Tambo</span><h2>Simple comme<br /><em>un message WhatsApp.</em></h2></div><p>De votre commande à votre porte, une seule équipe pilote chaque étape. Vous gardez la visibilité, nous gardons la charge.</p></div>
+            <div class="process-list">
+              <article class="process-item"><span class="process-number">01</span><span class="process-icon"><span class="icon" data-icon="message-circle"></span></span><div class="process-copy"><h3>Envoyez un lien</h3><p>Amazon EU, Zara, Fnac, Decathlon ou n’importe quel site européen.</p></div><span class="process-arrow icon" data-icon="arrow-up-right"></span></article>
+              <article class="process-item"><span class="process-number">02</span><span class="process-icon"><span class="icon" data-icon="clock"></span></span><div class="process-copy"><h3>Recevez votre devis</h3><p>En moins de 48h, tout est inclus : produit, transport, douanes et service.</p></div><span class="process-arrow icon" data-icon="arrow-up-right"></span></article>
+              <article class="process-item"><span class="process-number">03</span><span class="process-icon"><span class="icon" data-icon="shield-check"></span></span><div class="process-copy"><h3>Payez en sécurité</h3><p>Carte, virement, PayPal, Orange Money ou Airtel Money selon votre pays.</p></div><span class="process-arrow icon" data-icon="arrow-up-right"></span></article>
+              <article class="process-item"><span class="process-number">04</span><span class="process-icon"><span class="icon" data-icon="plane"></span></span><div class="process-copy"><h3>On expédie</h3><p>Nous achetons, consolidons et expédions depuis la Belgique.</p></div><span class="process-arrow icon" data-icon="arrow-up-right"></span></article>
+              <article class="process-item"><span class="process-number">05</span><span class="process-icon"><span class="icon" data-icon="package-check"></span></span><div class="process-copy"><h3>Livraison chez vous</h3><p>À domicile ou en point relais, avec suivi WhatsApp à chaque étape.</p></div><span class="process-arrow icon" data-icon="arrow-up-right"></span></article>
+            </div>
+          </div>
+        </section>
+
+        <section id="destinations" class="section destinations-section">
+          <div class="container">
+            <div class="route-caption route-caption-dark"><span>GLOBAL ROUTE / 04.2026</span><strong>50.9381° N → 26.2041° S</strong><span>HUB TO HUB</span></div>
+            <div class="section-intro"><span class="section-kicker">Destinations</span><h2>Nous livrons là<br /><em>où vous êtes.</em></h2><p>Deux marchés stratégiques, un seul interlocuteur de confiance.</p></div>
+            <div class="destinations-grid">
+              <article class="destination-card destination-za"><div class="destination-top"><span class="country-flag">🇿🇦</span><span class="available"><span class="status-dot"></span> Service disponible</span></div><h3>Afrique du Sud</h3><p>Livraison premium, douanes simplifiées et service personnalisé dans les grandes villes.</p><div class="city-list"><span>Johannesburg</span><span>Cape Town</span><span>Durban</span><span>Pretoria</span></div><div class="destination-route"><span>Belgique</span><span class="icon" data-icon="arrow-right"></span><span>Afrique du Sud</span></div></article>
+              <article class="destination-card destination-rdc"><div class="destination-top"><span class="country-flag">🇨🇩</span><span class="available"><span class="status-dot"></span> Service disponible</span></div><h3>Congo RDC</h3><p>Les produits que vous cherchez, livrés avec un accompagnement premium et le paiement mobile.</p><div class="city-list"><span>Kinshasa</span><span>Lubumbashi</span></div><div class="destination-route"><span>Belgique</span><span class="icon" data-icon="arrow-right"></span><span>Congo RDC</span></div></article>
+            </div>
+          </div>
+        </section>
+
+        <section id="services" class="section services-section">
+          <div class="container">
+            <div class="route-caption"><span>TC / SERVICE MANIFEST</span><strong>ORIGIN: BELGIUM</strong><span>DESTINATION: AFRICA</span></div>
+            <div class="services-heading"><div><span class="section-kicker">Services</span><h2>Tout ce qu’il faut.<br /><em>Rien à improviser.</em></h2></div><p>Votre commande mérite mieux qu’un simple transfert. Nous assemblons une chaîne claire, suivie et assurée.</p></div>
+            <div class="service-grid">
+              <article class="service-card service-1"><span class="service-icon"><span class="icon" data-icon="shopping-cart"></span></span><span class="service-index">01</span><h3>Personal Shopper Europe</h3><p>Vous envoyez le lien. Nous achetons pour vous sur les meilleures plateformes européennes.</p><span class="service-arrow icon" data-icon="arrow-up-right"></span></article>
+              <article class="service-card service-2"><span class="service-icon"><span class="icon" data-icon="boxes"></span></span><span class="service-index">02</span><h3>Consolidation de colis</h3><p>Plusieurs commandes réunies dans un seul colis pour réduire vos frais de transport.</p><span class="service-arrow icon" data-icon="arrow-up-right"></span></article>
+              <article class="service-card service-3"><span class="service-icon"><span class="icon" data-icon="file-check"></span></span><span class="service-index">03</span><h3>Gestion des douanes</h3><p>Les formalités sont prises en charge avec une vision claire du coût total.</p><span class="service-arrow icon" data-icon="arrow-up-right"></span></article>
+              <article class="service-card service-4"><span class="service-icon"><span class="icon" data-icon="shield-check"></span></span><span class="service-index">04</span><h3>Assurance colis</h3><p>Chaque envoi est assuré pour vous apporter de la sérénité jusqu’à la réception.</p><span class="service-arrow icon" data-icon="arrow-up-right"></span></article>
+              <article class="service-card service-5"><span class="service-icon"><span class="icon" data-icon="radio"></span></span><span class="service-index">05</span><h3>Suivi WhatsApp</h3><p>Des mises à jour simples et régulières directement dans votre conversation.</p><span class="service-arrow icon" data-icon="arrow-up-right"></span></article>
+              <article class="service-card service-6"><span class="service-icon"><span class="icon" data-icon="building"></span></span><span class="service-index">06</span><h3>Logistique B2B</h3><p>Un partenaire d’importation fiable pour vos achats récurrents et vos volumes.</p><span class="service-arrow icon" data-icon="arrow-up-right"></span></article>
+            </div>
+          </div>
+        </section>
+
+        <section id="tarifs" class="section pricing-section">
+          <div class="container pricing-layout">
+            <div class="pricing-copy">
+              <div class="route-caption route-caption-light"><span>COST CONTROL / TC-48</span><strong>DECLARED & TRACKED</strong><span>NO SURPRISES</span></div>
+              <span class="section-kicker">Tarifs</span><h2>Transparent,<br /><em>sans surprise.</em></h2>
+              <p>Votre devis inclut toujours le produit, la logistique, les douanes et notre commission. Choisissez votre destination pour voir les repères.</p>
+              <div class="country-toggle" role="group" aria-label="Choisir une destination tarifaire"><button class="active" type="button" data-country="za">🇿🇦 Afrique du Sud</button><button type="button" data-country="rdc">🇨🇩 Congo RDC</button></div>
+              <a class="text-link" href="#quote">Obtenir mon devis exact <span class="icon" data-icon="arrow-right"></span></a>
+              <div class="manifest-note"><div class="manifest-mini"><span>TC</span><b>48</b><i></i></div><span>MANIFEST / COST BREAKDOWN / VERIFIED</span></div>
+            </div>
+            <div class="price-card">
+              <div class="price-card-head"><div><span class="price-flag" data-price="flag">🇿🇦</span><h3 data-price="label">Afrique du Sud</h3><p data-price="cities">Johannesburg · Cape Town · Durban · Pretoria</p></div><span class="price-badge">ESTIMATION</span></div>
+              <div class="price-rows"><div><span>Frais de service</span><strong data-price="service">10 – 25 €</strong></div><div><span>Frais logistiques</span><strong data-price="logistics">25 – 60 €</strong></div><div><span>Marge produit</span><strong data-price="margin">20 – 40 %</strong></div><div><span>Assurance colis</span><strong data-price="insurance">5 – 10 €</strong></div><div class="price-total"><span>Délai de livraison</span><strong data-price="delay">7 – 14 jours</strong></div></div>
+              <div class="price-note"><span class="icon" data-icon="lock"></span> Le prix final est confirmé en moins de 48h.</div>
+            </div>
+          </div>
+        </section>
+
+        <section id="quote" class="section quote-section">
+          <div class="container quote-layout">
+            <div class="quote-intro"><div class="route-caption"><span>REQUEST / TC-48</span><strong>ONE LINK → FULL QUOTE</strong><span>HUMAN CHECK</span></div><span class="section-kicker">Devis gratuit</span><h2>Envoyez le lien.<br /><em>On s’occupe du reste.</em></h2><p>Réponse garantie en moins de 48h. Aucun engagement. Le moyen le plus rapide reste WhatsApp, mais votre email fonctionne aussi.</p><div class="quote-benefits"><span><span class="icon" data-icon="check"></span> Produit + logistique calculés</span><span><span class="icon" data-icon="check"></span> Douanes incluses</span><span><span class="icon" data-icon="check"></span> Suivi personnalisé</span></div><div class="quote-contact"><span class="icon" data-icon="mail"></span><span>tamboshop@yahoo.com</span></div><div class="handoff-photo"><div class="handoff-art"><span class="handoff-box"></span><span class="handoff-hand"></span><span class="handoff-badge">TC</span></div><span>LAST MILE / KINSHASA / HANDOFF</span></div></div>
+            <form class="quote-form" data-quote-form>
+              <div class="form-topline"><span>01 — VOTRE DEMANDE</span><span>Réponse &lt; 48h</span></div>
+              <label>Prénom &amp; nom<input required name="name" autocomplete="name" placeholder="Ex. Sarah Kabeya" /></label>
+              <div class="form-row"><label>WhatsApp<input name="phone" autocomplete="tel" placeholder="+32 4xx xx xx xx" /></label><label>Email<input required type="email" name="email" autocomplete="email" placeholder="vous@email.com" /></label></div>
+              <label>Pays de livraison<select name="country"><option>Afrique du Sud</option><option>Congo RDC</option></select></label>
+              <label>Lien du produit<input required type="url" name="product" placeholder="https://…" /></label>
+              <label>Message <span class="optional">optionnel</span><textarea name="message" placeholder="Quantité, taille, urgence…" rows="3"></textarea></label>
+              <button type="submit" class="button button-primary form-submit">Recevoir mon devis gratuit <span class="icon" data-icon="arrow-up-right"></span></button>
+              <p class="form-success" data-form-success hidden><span class="icon" data-icon="check"></span> Votre demande est prête à être envoyée par email.</p>
+              <p class="form-privacy"><span class="icon" data-icon="lock"></span> Vos informations restent confidentielles.</p>
+            </form>
+          </div>
+        </section>
+
+        <section id="faq" class="section faq-section">
+          <div class="container faq-layout"><div class="faq-intro"><div class="route-caption"><span>FAQ / DOCUMENT CHECK</span><strong>TRACKING ID REQUIRED</strong><span>SUPPORT 1:1</span></div><span class="section-kicker">Questions fréquentes</span><h2>Les réponses,<br /><em>sans détour.</em></h2><p>Vous ne trouvez pas votre réponse ? Écrivez-nous directement sur WhatsApp.</p><a class="button button-dark" href="#quote">Nous contacter <span class="icon" data-icon="message-circle"></span></a></div>
+            <div class="faq-list">
+              <div class="faq-item open"><button type="button" aria-expanded="true"><span>Comment puis-je payer ?</span><span class="icon" data-icon="x"></span></button><div class="faq-answer"><p>Nous acceptons le virement, PayPal, la carte bancaire, Orange Money et Airtel Money selon le pays de livraison.</p></div></div>
+              <div class="faq-item"><button type="button" aria-expanded="false"><span>Quels produits peut-on importer ?</span><span class="icon" data-icon="plus"></span></button><div class="faq-answer"><p>Vous pouvez nous envoyer un lien vers les produits disponibles sur des sites européens. Nous confirmons la faisabilité et le coût total dans le devis.</p></div></div>
+              <div class="faq-item"><button type="button" aria-expanded="false"><span>Quels sont les délais de livraison ?</span><span class="icon" data-icon="plus"></span></button><div class="faq-answer"><p>Comptez généralement 7 à 14 jours vers l’Afrique du Sud et 10 à 21 jours vers la RDC, selon le produit et le transport choisi.</p></div></div>
+              <div class="faq-item"><button type="button" aria-expanded="false"><span>Gérez-vous les douanes ?</span><span class="icon" data-icon="plus"></span></button><div class="faq-answer"><p>Oui. Les formalités douanières sont intégrées au parcours et détaillées dans votre devis pour limiter les mauvaises surprises.</p></div></div>
+              <div class="faq-item"><button type="button" aria-expanded="false"><span>Que se passe-t-il si mon colis est perdu ?</span><span class="icon" data-icon="plus"></span></button><div class="faq-answer"><p>Votre envoi est assuré. Notre équipe vous accompagne dans la procédure et le remboursement prévu par la couverture.</p></div></div>
+              <div class="faq-item"><button type="button" aria-expanded="false"><span>Puis-je commander depuis plusieurs sites ?</span><span class="icon" data-icon="plus"></span></button><div class="faq-answer"><p>Oui. Envoyez plusieurs liens dans la même demande et nous vous proposerons une solution de consolidation adaptée.</p></div></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="final-cta"><div class="container final-cta-inner"><div><span class="section-kicker">Prêt à commencer ?</span><h2>Votre prochain colis<br /><em>commence par un lien.</em></h2></div><a class="button button-light" href="#quote">Demander un devis <span class="icon" data-icon="arrow-right"></span></a><div class="cta-orbit orbit-one"></div><div class="cta-orbit orbit-two"></div></div></section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-grid"><div class="footer-brand"><a class="brand brand-footer" href="#top"><span class="brand-mark" aria-hidden="true"><span>TC</span><i></i></span><span class="brand-copy"><strong>Tambo</strong><span>Connect</span></span></a><p>Importation premium<br />Belgique → Afrique.</p><div class="socials"><a href="mailto:tamboshop@yahoo.com" aria-label="Email"><span class="icon" data-icon="mail"></span></a><a href="https://www.instagram.com/tambo_connect" target="_blank" rel="noreferrer" aria-label="Instagram"><span class="icon" data-icon="instagram"></span></a><a href="https://www.youtube.com" target="_blank" rel="noreferrer" aria-label="Youtube"><span class="icon" data-icon="youtube"></span></a></div></div><div class="footer-column"><span>Navigation</span><a href="#process">Comment ça marche</a><a href="#destinations">Destinations</a><a href="#services">Services</a></div><div class="footer-column"><span>Contact</span><a href="mailto:tamboshop@yahoo.com">tamboshop@yahoo.com</a><span>Aalst, Belgique</span><span>Johannesburg, Gauteng</span></div><div class="footer-column footer-hours"><span>Horaires</span><strong>Lun – Sam</strong><span>9h – 19h (CET)</span><a href="#quote" class="footer-cta">Envoyer un lien <span class="icon" data-icon="arrow-up-right"></span></a></div></div>
+        <div class="container footer-bottom"><span>© 2026 Tambo Connect</span><span>Belgique · Afrique du Sud · Congo RDC</span><span>Importation premium · Douanes gérées · Suivi humain</span></div>
+      </footer>
+    </div>
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+    <script type="module" src="/src/script.js"></script>
+  </body>
 </html>
